@@ -1,0 +1,55 @@
+{
+  "name": "zkattest",
+  "version": "0.1.0",
+  "description": "ZK-ATTEST-0.1 — REAL SHA-256 salted-witness commitment. open is REAL-not-ZK. Groth16, SNARK, and STARK are SLOT. Author Aziel Eliab only.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "author": "Aziel Eliab",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AzielEliab/zkattest.git"
+  },
+  "homepage": "https://github.com/AzielEliab/zkattest",
+  "bugs": {
+    "url": "https://github.com/AzielEliab/zkattest/issues"
+  },
+  "keywords": [
+    "zkattest",
+    "sha256",
+    "commitment",
+    "hash-commitment",
+    "ZK-ATTEST-0.1"
+  ],
+  "bin": {
+    "zkattest": "./dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "NOTICE",
+    "README.md",
+    "SKILL.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsx --test --test-concurrency=1 test/*.test.ts",
+    "pack": "node workers/download-tracker/scripts/pack-archive.mjs",
+    "zkattest": "tsx src/cli.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
