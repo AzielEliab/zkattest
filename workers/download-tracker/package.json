@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "name": "zkattest-download-tracker",
+  "description": "zkattest download tracker. Serves the 0.1.0 source archive with HTTP 200 and counts downloads per owner, repo, branch, and fork.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "check": "wrangler check"
+  },
+  "devDependencies": {
+    "wrangler": "^4.45.0"
+  }
+}

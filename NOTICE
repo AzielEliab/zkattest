@@ -1,0 +1,15 @@
+zkattest
+Copyright 2026 Aziel Eliab
+
+This product is licensed under the Apache License, Version 2.0.
+Forks are always allowed. No additional permission is required to fork,
+modify, or redistribute this work under those terms.
+
+ZK-ATTEST-0.1 is a SHA-256 salted-witness commitment tool.
+commit and verify are REAL. open is REAL-not-ZK.
+Groth16, SNARK, and STARK proof systems are SLOT (not implemented).
+This repository never produces a ZK-SNARK proof.
+
+Author identity is Aziel Eliab only.
+Standalone repository: https://github.com/AzielEliab/zkattest
+Runtime neighbor: https://github.com/AzielEliab/aziel-runtime
